@@ -37,7 +37,7 @@ const AssignRole = () => {
     const fetchUsers = async () => {
       try {
         const usersResponse = await axios.get(
-          "http://localhost:5000/api/users/get-users",
+          "https://rbac-app-mvkn.onrender.com/api/users/get-users",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -51,7 +51,7 @@ const AssignRole = () => {
     const fetchRoles = async () => {
       try {
         const rolesResponse = await axios.get(
-          "http://localhost:5000/api/roles/get-roles",
+          "https://rbac-app-mvkn.onrender.com/api/roles/get-roles",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -75,7 +75,7 @@ const AssignRole = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/assign-role",
+        "https://rbac-app-mvkn.onrender.com/api/users/assign-role",
         { userId: selectedUser, roleId: selectedRole },
         { headers: { Authorization: `Bearer ${token}` } }
       );

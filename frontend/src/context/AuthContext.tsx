@@ -51,7 +51,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const login = async (username: string, password: string) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://rbac-app-mvkn.onrender.com/api/auth/login",
         { username, password }
       );
       const { token: newToken, user: loggedInUser } = response.data;

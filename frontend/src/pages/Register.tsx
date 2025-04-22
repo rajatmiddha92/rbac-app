@@ -23,7 +23,7 @@ const Register = () => {
     event.preventDefault();
     setError(null);
     try {
-      await axios.post("http://localhost:5000/api/auth/register", {
+      await axios.post("https://rbac-app-mvkn.onrender.com/api/auth/register", {
         username,
         password,
         isAdmin,

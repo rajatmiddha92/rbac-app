@@ -48,7 +48,7 @@ const CreateRole = () => {
     setSuccessMessage(null);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/roles/create",
+        "https://rbac-app-mvkn.onrender.com/api/roles/create",
         { name, permissions },
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -1,0 +1,319 @@
+/* Global Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Layout and Navigation */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Auth Forms (Login, Register) */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+  width: calc(100% - 12px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+.form-group .error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.form-group .link {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form-group .link:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dashboard-info {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.dashboard-actions button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.dashboard-actions button:hover {
+  background-color: #1e7e34;
+}
+
+/* Admin Dashboard */
+.admin-dashboard-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.admin-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-actions button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.admin-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Create Role and Assign Role Forms */
+.role-form-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.role-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.role-form-group {
+  margin-bottom: 15px;
+}
+
+.role-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.role-form-group input[type="text"],
+.role-form-group select {
+  width: calc(100% - 12px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.role-form-group select option {
+  padding: 8px;
+}
+
+.role-form-group button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.role-form-group button:hover {
+  background-color: #1e7e34;
+}
+
+.role-form-group .checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.role-form-group .checkbox-item {
+  margin-bottom: 5px;
+}
+
+.role-form-group .checkbox-item input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Unauthorized Page */
+.unauthorized-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.unauthorized-container h2 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.unauthorized-container p {
+  color: #555;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 600px) {
+  main {
+    padding: 15px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .auth-container {
+    margin-top: 30px;
+    padding: 15px;
+  }
+
+  .admin-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-actions button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .role-form-container {
+    margin-top: 20px;
+    padding: 15px;
+  }
+}
